@@ -9,4 +9,5 @@ export const StyledMainLayout = styled.main<StyledProps>`
   width: 100vw;
   min-height: 100vh;
   padding: 2% 2%;
+  padding-top: 35px;
 `;

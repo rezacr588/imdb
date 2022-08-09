@@ -14,6 +14,10 @@ export const Container = styled.section`
   align-items: baseline;
   padding: 10px 18px;
   background: #000;
-
-  position: sticky;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 35px;
+  z-index: 2;
 `;
