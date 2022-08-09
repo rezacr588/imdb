@@ -14,6 +14,6 @@ export const StyledContainer = styled.div`
   justify-content: center;
 `;
 
-export const Icon = styled.img`
+export const IconContainer = styled.a`
   justify-self: center;
 `;

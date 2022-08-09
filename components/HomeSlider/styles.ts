@@ -37,8 +37,8 @@ export const SliderContainer = styled.div`
 export const StyledMovieItems = styled.div`
   display: grid;
   row-gap: 1.5rem;
-  column-gap: 0.5rem;
-  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr;
 `;
 
 export const StyledTitle = styled.h3`
