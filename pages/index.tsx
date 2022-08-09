@@ -1,3 +1,4 @@
+import { HomeBottom } from "components/General/HomeBottom/HomeBottom";
 import { HomeSlider } from "components/HomeSlider/HomeSlider";
 import type { NextPage } from "next";
 import MainLayout from "../components/General/MainLayout/MainLayout";
@@ -8,6 +9,7 @@ const Home: NextPage = () => {
     <MainLayout>
       <HomeHeader />
       <HomeSlider />
+      <HomeBottom />
     </MainLayout>
   );
 };
