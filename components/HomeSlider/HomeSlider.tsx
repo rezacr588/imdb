@@ -14,7 +14,7 @@ export const HomeSlider: FC = () => {
   const [type, setType] = useState<"now-showing" | "coming-soon">(
     "now-showing",
   );
-  const [data, setData] = useState<[MovieItemInterface]>(movies);
+  const [data, setData] = useState<MovieItemInterface[]>(movies);
 
   return (
     <SliderContainer>
