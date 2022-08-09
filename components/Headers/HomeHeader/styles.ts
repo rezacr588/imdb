@@ -13,4 +13,7 @@ export const Container = styled.section`
   justify-content: space-between;
   align-items: baseline;
   padding: 10px 18px;
+  background: #000;
+
+  position: sticky;
 `;
