@@ -11,9 +11,9 @@ export const TextLogo = styled.h1`
 export const Container = styled.section`
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 10px 18px;
-  background: #000;
+  background: #0f1b2b;
   position: fixed;
   top: 0;
   right: 0;
