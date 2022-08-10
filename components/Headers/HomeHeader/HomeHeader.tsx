@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FC } from "react";
 import { Container, TextLogo } from "./styles";
 
-const MainLayout: FC = () => {
+const HomeHeader: FC = () => {
   return (
     <Container>
       <TextLogo>Star Movie</TextLogo>
@@ -11,4 +11,4 @@ const MainLayout: FC = () => {
   );
 };
 
-export default MainLayout;
+export default HomeHeader;
