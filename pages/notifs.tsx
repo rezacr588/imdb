@@ -4,7 +4,7 @@ import BaseHeader from "components/Headers/BaseHeader/BaseHeader";
 import type { NextPage } from "next";
 import MainLayout from "../components/General/MainLayout/MainLayout";
 
-const Home: NextPage = () => {
+const Notifs: NextPage = () => {
   return (
     <MainLayout>
       <BaseHeader title="Notifications" />
@@ -14,4 +14,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Notifs;
