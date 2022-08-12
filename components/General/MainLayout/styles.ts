@@ -6,7 +6,6 @@ interface StyledProps {
 
 export const StyledMainLayout = styled.main<StyledProps>`
   background: ${(p) => (p.theme === "dark" ? "#0F1B2B" : "#fff")};
-  width: 100vw;
   padding-top: 49px;
   padding-bottom: 49px;
 `;

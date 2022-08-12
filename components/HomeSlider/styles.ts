@@ -38,10 +38,10 @@ export const StyledMovieItems = styled.div`
   display: grid;
   row-gap: 2rem;
   column-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(164px, 1fr));
-  margin: 0 1rem;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  max-width: 900px;
+  padding: 0 10px;
+  margin: auto;
 `;
 
 export const StyledTitle = styled.h3`
