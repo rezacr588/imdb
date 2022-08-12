@@ -25,3 +25,26 @@ export const LoginContainer = styled.div`
 export const TopLine = styled.hr`
   border: 1px solid #2b3543;
 `;
+
+export const Text = styled.p`
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  opacity: 0.5;
+  padding: 0;
+  margin: 0;
+`;
+
+export const Button = styled.button`
+  background: #e51937;
+  border-radius: 4px;
+  width: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 0.8rem 0;
+  border: none;
+  outline: none;
+  width: 324px;
+  cursor: pointer;
+`;

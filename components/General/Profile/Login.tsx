@@ -1,7 +1,8 @@
+import { StyledLink } from "components/Styles/StyledLink";
 import { FC } from "react";
 import { Input } from "../Input/Input";
 import { Space } from "../Input/style";
-import { LoginContainer } from "./styles";
+import { Button, LoginContainer, Text } from "./styles";
 
 export const Login: FC = () => (
   <LoginContainer>
@@ -20,5 +21,15 @@ export const Login: FC = () => (
       id="password"
       label="PASSWORD"
     />
+    <Space />
+    <Space />
+    <StyledLink href="/forgot-password">
+      <Text>Forgot Password?</Text>
+    </StyledLink>
+    <Space />
+    <Space />
+    <StyledLink href="/login">
+      <Button>Login</Button>
+    </StyledLink>
   </LoginContainer>
 );
