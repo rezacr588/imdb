@@ -48,3 +48,27 @@ export const Button = styled.button`
   width: 324px;
   cursor: pointer;
 `;
+
+export const TwitterIcon = styled.img`
+  background: #1aa9e1;
+  padding: 12px;
+  border-radius: 50%;
+`;
+
+export const FacebookIcon = styled.img`
+  background: #3b5a9a;
+  padding: 12px;
+  border-radius: 50%;
+`;
+
+export const GooglePlusIcon = styled.img`
+  background: #cb3e2d;
+  padding: 12px;
+  border-radius: 50%;
+`;
+
+export const SocialIconsContainer = styled.div`
+  display: flex;
+  position: absolute;
+  bottom: 12%;
+`;

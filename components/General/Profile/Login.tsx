@@ -1,8 +1,16 @@
 import { StyledLink } from "components/Styles/StyledLink";
 import { FC } from "react";
 import { Input } from "../Input/Input";
-import { Space } from "../Input/style";
-import { Button, LoginContainer, Text } from "./styles";
+import { SpaceX, SpaceY } from "../Input/style";
+import {
+  Button,
+  LoginContainer,
+  Text,
+  TwitterIcon,
+  FacebookIcon,
+  GooglePlusIcon,
+  SocialIconsContainer,
+} from "./styles";
 
 export const Login: FC = () => (
   <LoginContainer>
@@ -13,7 +21,7 @@ export const Login: FC = () => (
       type="text"
       label="USER NAME"
     />
-    <Space />
+    <SpaceY />
     <Input
       type="password"
       name="password"
@@ -21,15 +29,28 @@ export const Login: FC = () => (
       id="password"
       label="PASSWORD"
     />
-    <Space />
-    <Space />
+    <SpaceY />
+    <SpaceY />
     <StyledLink href="/forgot-password">
       <Text>Forgot Password?</Text>
     </StyledLink>
-    <Space />
-    <Space />
+    <SpaceY />
+    <SpaceY />
     <StyledLink href="/login">
       <Button>Login</Button>
     </StyledLink>
+    <SocialIconsContainer>
+      <StyledLink href="/twitter-auth">
+        <TwitterIcon src="/logo-twitter.svg" />
+      </StyledLink>
+      <SpaceX />
+      <StyledLink href="/facebook-auth">
+        <FacebookIcon src="/logo-facebook.svg" />
+      </StyledLink>
+      <SpaceX />
+      <StyledLink href="/google-auth">
+        <GooglePlusIcon src="/logo-google-plus.svg" />
+      </StyledLink>
+    </SocialIconsContainer>
   </LoginContainer>
 );

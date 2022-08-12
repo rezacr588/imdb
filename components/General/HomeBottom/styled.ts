@@ -12,6 +12,9 @@ export const StyledContainer = styled.div`
   align-items: center;
   background-color: #0f1b2b;
   justify-content: center;
+  @media (min-width: 601px) {
+    display: none;
+  }
 `;
 
 export const IconContainer = styled.a`

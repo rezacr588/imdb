@@ -42,6 +42,10 @@ export const WithIcon = styled.div`
   position: relative;
 `;
 
-export const Space = styled.div`
+export const SpaceY = styled.div`
   padding-top: 1rem;
+`;
+
+export const SpaceX = styled.div`
+  padding-left: 1rem;
 `;
