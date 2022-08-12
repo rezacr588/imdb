@@ -10,7 +10,7 @@ export const ButtonContainer = styled.div`
   align-items: center;
 `;
 
-export const Button = styled.button<{ active: boolean }>`
+export const TabButton = styled.button<{ active: boolean }>`
   border-radius: 16px;
   color: #fff;
   border: none;
@@ -36,9 +36,12 @@ export const SliderContainer = styled.div`
 
 export const StyledMovieItems = styled.div`
   display: grid;
-  row-gap: 1.5rem;
+  row-gap: 2rem;
   column-gap: 10px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(164px, 1fr));
+  margin: 0 1rem;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const StyledTitle = styled.h3`

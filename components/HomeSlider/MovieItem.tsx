@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import { FC } from "react";
 import { MovieItemInterface } from "./interfaces";
 import { Stars } from "./Stars";
@@ -40,12 +41,14 @@ export const MovieItem: FC<Props> = ({ data }) => {
 
   return (
     <div>
-      <img alt={data.id} src={data.imageSource} height={250} width="100%" />
+      <Image alt={data.id} src={data.imageSource} width={164} height={250} />
       <StyledTitle>{data.title}</StyledTitle>
       <Stars rating={data.rating} />
       <ExtraContainer>
-        <Extra>{data.genre}</Extra> <Space />
-        <Ellipse /> <Space />
+        <Extra>{data.genre}</Extra>
+        <Space />
+        <Ellipse />
+        <Space />
         <Extra>
           {time} | {data.age}
         </Extra>

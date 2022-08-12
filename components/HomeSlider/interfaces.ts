@@ -7,3 +7,7 @@ export interface MovieItemInterface {
   genre: string;
   age: string;
 }
+
+export interface MovieItemsInterface {
+  data: MovieItemInterface[];
+}
