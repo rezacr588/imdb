@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const StyledContainer = styled.div`
-  border-top: 1px solid #2b3543;
-  margin-top: 1.25rem;
   width: 100%;
 `;
 

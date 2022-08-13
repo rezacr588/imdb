@@ -4,10 +4,11 @@ export const ButtonContainer = styled.div`
   border: 1px solid #2c3f5b;
   border-radius: 20px;
   padding: 4px;
-  margin: 1rem;
+  margin: 1rem auto;
   display: flex;
   justify-content: baseline;
   align-items: center;
+  width: 340px;
 `;
 
 export const TabButton = styled.button<{ active: boolean }>`

@@ -24,6 +24,7 @@ export const LoginContainer = styled.div`
 
 export const TopLine = styled.hr`
   border: 1px solid #2b3543;
+  margin-bottom: 0;
 `;
 
 export const Text = styled.p`
