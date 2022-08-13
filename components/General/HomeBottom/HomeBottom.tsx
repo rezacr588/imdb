@@ -19,13 +19,13 @@ export const HomeBottom: FC = () => {
           />
         </IconContainer>
       </Link>
-      <Link href={`/event-ticket`}>
+      <Link href={`/tickets`}>
         <IconContainer>
           <img
-            src={`/event-ticket-${
-              router.pathname === "/event-ticket" ? "active" : "inactive"
+            src={`/tickets-${
+              router.pathname === "/tickets" ? "active" : "inactive"
             }.svg`}
-            alt="event-ticket-inactive"
+            alt="tickets-inactive"
           />
         </IconContainer>
       </Link>
