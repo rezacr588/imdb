@@ -14,10 +14,15 @@ export const Container = styled.section`
   align-items: center;
   padding: 10px 18px;
   background: #0f1b2b;
+  height: 35px;
+`;
+
+export const HeaderContainer = styled.div`
+  z-index: 100;
   position: fixed;
   top: 0;
   right: 0;
+  height: fit-content;
   left: 0;
-  height: 35px;
-  z-index: 2;
+  z-index: 100;
 `;

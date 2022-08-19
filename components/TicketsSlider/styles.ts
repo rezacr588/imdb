@@ -1,4 +1,18 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+export const fadeIn = keyframes`
+  from {
+    margin-top: 3rem;
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+
+  to {
+    margin-top: 0rem;
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
 
 export const TicketWrapper = styled.div`
   max-width: 324px;
@@ -6,6 +20,8 @@ export const TicketWrapper = styled.div`
   display: grid;
   overflow: hidden;
   margin: auto;
+  transition: all 2s;
+  position: absolute;
 `;
 
 export const Title = styled.h2`
@@ -72,4 +88,31 @@ export const Text = styled.p`
 export const ParDetails = styled.div`
   display: flex;
   justify-content: space-between;
+`;
+
+export const StyledTicketsContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  & > div:first-child {
+    opacity: 1;
+    z-index: 3;
+    top: 0;
+    transform: scale(1);
+  }
+  & > div:nth-child(2) {
+    opacity: 0.7;
+    top: 40px;
+    z-index: 2;
+    transform: scale(0.9);
+  }
+  & > div:nth-child(3) {
+    z-index: 1;
+    top: 80px;
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 `;

@@ -1,4 +1,5 @@
-import { SpaceX, SpaceY } from "components/Styles/styles";
+import { SpaceX } from "components/Styles/styles";
+import { ticketInterface } from "data/tickets";
 import Image from "next/image";
 import { FC } from "react";
 import { Detail } from "./Detail";
@@ -13,33 +14,35 @@ import {
   ParDetails,
 } from "./styles";
 
-export const Ticket: FC = () => {
+export const Ticket: FC<ticketInterface> = ({
+  imgSource,
+  title,
+  theatre,
+  date,
+  time,
+  hall,
+  seat,
+  row,
+}) => {
   return (
     <TicketWrapper>
-      <div>
-        <Image
-          src="/dark-knight-cover.jpg"
-          alt="dark-knight-cover"
-          width={324}
-          height={208}
-        />
-      </div>
+      <Image src={imgSource} alt="dark-knight-cover" width={324} height={208} />
       <DetailsWrapper>
         <WholeRow>
-          <Title>John Wick 3: Parabellum</Title>
+          <Title>{title}</Title>
         </WholeRow>
         <WholeRow>
-          <Detail title="Theatre" time="Paragon Cinema" />
+          <Detail title="Theatre" value={theatre} />
         </WholeRow>
-        <Detail title="Date" time="24 May, 2019" />
-        <Detail title="Time" time="8:30 - 10:00 AM" />
+        <Detail title="Date" value={date} />
+        <Detail title="Time" value={time} />
         <Row>
-          <Detail title="Hall" time="C" />
+          <Detail title="Hall" value={hall} />
           <SpaceX />
           <SpaceX />
-          <Detail title="Row" time="E" />
+          <Detail title="Row" value={row} />
         </Row>
-        <Detail title="Seat" time="E4, E5" />
+        <Detail title="Seat" value={seat} />
       </DetailsWrapper>
       <ParWrapper>
         <div>
