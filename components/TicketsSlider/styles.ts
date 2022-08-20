@@ -53,7 +53,7 @@ export const SubTitleContent = styled.h4`
 
 export const DetailsWrapper = styled.div`
   display: grid;
-  padding: 24px;
+  padding: 16px;
   grid-template-columns: repeat(2, 1fr);
   background: #2b3543;
 `;
@@ -68,12 +68,12 @@ export const WholeRow = styled.div`
 `;
 
 export const StyledDetail = styled.div`
-  margin-top: 1rem;
+  margin-top: 8px;
 `;
 
 export const ParWrapper = styled.div`
   background: #ffffff;
-  padding: 1rem 40px;
+  padding: 16px 40px;
 `;
 
 export const Text = styled.p`
@@ -96,7 +96,7 @@ export const StyledTicketsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   & > div:first-child {
     opacity: 1;
     z-index: 3;
