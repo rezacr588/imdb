@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { MovieMask } from "components/General/MovieMask/MovieMask";
 import Image from "next/image";
 import { FC } from "react";
 import { MovieItemInterface } from "./interfaces";
@@ -41,7 +42,7 @@ export const MovieItem: FC<Props> = ({ data }) => {
 
   return (
     <div>
-      <Image alt={data.id} src={data.imageSource} width={164} height={250} />
+      <MovieMask imageSource={data.imageSource} id={data.id} />
       <StyledTitle>{data.title}</StyledTitle>
       <Stars rating={data.rating} />
       <ExtraContainer>

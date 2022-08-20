@@ -9,3 +9,7 @@ export const StyledMainLayout = styled.main<StyledProps>`
   padding-top: 49px;
   padding-bottom: 49px;
 `;
+
+export const StyledMovieLayout = styled.main<StyledProps>`
+  background: ${(p) => (p.theme === "dark" ? "#0F1B2B" : "#fff")};
+`;
