@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { MovieMask } from "components/General/MovieMask/MovieMask";
-import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 import { MovieItemInterface } from "./interfaces";
 import { Stars } from "./Stars";
@@ -42,7 +42,11 @@ export const MovieItem: FC<Props> = ({ data }) => {
 
   return (
     <div>
-      <MovieMask imageSource={data.imageSource} id={data.id} />
+      <Link href={"/movies/" + data.id}>
+        <a>
+          <MovieMask imageSource={data.imageSource} id={data.id} />
+        </a>
+      </Link>
       <StyledTitle>{data.title}</StyledTitle>
       <Stars rating={data.rating} />
       <ExtraContainer>
