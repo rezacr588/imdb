@@ -48,7 +48,7 @@ export const MovieItem: FC<Props> = ({ data }) => {
         </a>
       </Link>
       <StyledTitle>{data.title}</StyledTitle>
-      <Stars rating={data.rating} />
+      <Stars scale={1} rating={data.rating} />
       <ExtraContainer>
         <Extra>{data.genre}</Extra>
         <Space />

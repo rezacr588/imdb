@@ -38,10 +38,10 @@ export const SliderContainer = styled.div`
 export const StyledMovieItems = styled.div`
   display: grid;
   row-gap: 2rem;
-  column-gap: 10px;
+  column-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   max-width: 900px;
-  padding: 0 10px;
+  padding: 0 2rem;
   margin: auto;
 `;
 
@@ -80,4 +80,9 @@ export const ExtraContainer = styled.div`
 
 export const Space = styled.span`
   padding: 3px;
+`;
+
+export const StarImage = styled.img<{ scale: number }>`
+  transform: scale(${(p) => p.scale});
+  margin-left: ${(p) => (p.scale !== 1 ? "1rem" : 0)};
 `;

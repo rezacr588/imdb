@@ -41,5 +41,6 @@ export const RightItem = styled.div`
 export const MovieMaskContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
 `;
